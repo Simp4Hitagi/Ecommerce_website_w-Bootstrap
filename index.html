@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Challenge</title>
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/k4psrkCB/dodge-charger-daytona-srt-concept-103-1660757049.jpg">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+<!-- css file link -->
+<link rel="stylesheet" href="./styles/style.css"/>
+
+</head>
+<body class="bg-black">
+    <header class="d-flex h-auto bg-dark h-25">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                 <!-- logo -->
+                <img class="img-fluid w-50 h-50 rounded-circle m-2"src="https://i.postimg.cc/CMqDSJVF/Fb-L4bw-XVUAITynb.jpg" alt="logo">
+                </div>
+                <div class="col-6">
+                <!-- navbar -->
+                    <nav class="navbar navbar-expand-lg m-5 justify-content-evenly">
+                        <div class="row">
+                            <div class="container-fluid">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                  <a class="nav-link active text-light bg-black rounded-pill mx-1" aria-current="page" href="#home">Home</a>
+                                  <a class="nav-link text-light bg-black rounded-pill mx-1" href="#products">Products</a>
+                                  <a class="nav-link text-light bg-black rounded-pill mx-1" href="#contact">Contact</a>
+                                </div>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </header> 
+    <main class="text-light">
+        <!-- Home -->
+        <section>
+            <h2 id="home" class="text-light d-flex align-items-center justify-content-center">Home</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus totam omnis. A voluptatem natus distinctio nisi, ipsum odit, minus in libero, quibusdam suscipit nobis repellendus. Porro doloribus enim officia?
+            Dignissimos expedita iure exercitationem, excepturi quis sit recusandae dolore possimus eveniet magnam fugiat rem voluptatum fuga, beatae voluptate! Illo quia labore iure dolorum recusandae modi eius numquam sapiente at! Repellat.</p>
+        </section>
+        <!-- Products -->
+        <section>
+            <h2 id="products" class="text-light d-flex align-items-center justify-content-center">Products</h2>
+            <h5>Check out our amazing deals!</h5>
+            <!-- carousel -->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://i.postimg.cc/85ZpTmXF/2021-dodge-wallpaper-challenger-06-jpg-image-1440.webp" class="d-block w-100" alt="dodge_1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.postimg.cc/cCGpyg0K/6812673.jpg" class="d-block w-100" alt="dodge_2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://i.postimg.cc/7YWN5vJ9/dodge-charger-artwork-4k-0x.jpg" class="d-block w-100" alt="dodge_3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- modal -->
+            <!-- Button trigger modal -->
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    View More
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <!-- form -->
+            <h2 id="contact" class="text-light d-flex align-items-center justify-content-center">Contact</h2>
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                </div>
+                <button type="submit" class="btn btn-outline-danger">Submit</button>
+              </form>
+        </section>
+
+    </main>
+    <br>
+    <footer class="bg-dark text-light">
+        <h4 class="">Social media links</h4>
+        <div class="socails">
+            <div class="row">
+                <ul class="d-flex list-unstyled gap-3">
+                    <li><i class="fa-brands fa-facebook"><a href="https://www.facebook.com/getbootstrap/"></a></i></li>
+                    <li>
+                        <i class="fa-brands fa-twitter"><a href="https://twitter.com/getbootstrap?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a></i></li>
+                    <li>
+                        <i class="fa-brands fa-github"><a href=""></a></i></li>
+                </ul>
+        </div>
+        <p>Copy right &copy; 2022</p>
+    </footer>
+<!-- kit code for font awesome -->
+<script src="https://kit.fontawesome.com/3f7306740c.js" crossorigin="anonymous"></script>
+</body>
+</html>
